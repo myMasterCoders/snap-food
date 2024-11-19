@@ -1,0 +1,57 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --text-color:gray;
+}
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul,li{
+    display: flex;
+}
+.flex{
+    display: flex;
+}
+body{
+    position: relative;
+    direction: rtl;
+    font-size: medium;
+    font-family:'Vazir',"IRANYekan";
+}
+.fadeImg{
+    animation: fade 1s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+@font-face {
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    font-family:'Vazir';
+    src:local('Vazir'),url("../fonts/Vazir.eot") format('embedded-opentype'),
+        local('Vazir'),url("../fonts/Vazir.ttf") format('truetype'),
+        local('Vazir'),url("../fonts/Vazir.woff") format('woff'),
+        local('Vazir'),url("../fonts/Vazir.woff2") format('woff2');
+
+}
